@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 /**
  * @description rest工具
- * @author dcl
- * @date 2019/12/17
  *
  */
 public class Result<T>

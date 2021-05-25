@@ -2,6 +2,7 @@ package com.yxyz.dao;
 
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import com.yxyz.vo.User;
@@ -15,6 +16,7 @@ import com.yxyz.vo.User;
 
 */
 @Repository
+@Mapper
 public interface UserDao
 {
 	void insert(User vo);

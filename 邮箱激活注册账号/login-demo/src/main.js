@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 import $ from 'jquery'
 
-axios.defaults.baseURL = 'http://139.159.147.237:8080/yxyz';
+axios.defaults.baseURL = 'http://127.0.0.1:8080/yxyz';
 Vue.prototype.HOST='/user'
 
 Vue.config.productionTip = false

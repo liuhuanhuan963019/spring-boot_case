@@ -8,13 +8,6 @@ import com.yxyz.vo.User;
 * @Description: 该类的功能描述
 *
 * @version: v1.0.0
-* @author: ducl
-* @date: 2020年7月7日 下午9:21:24
-*
-* Modification History:
-* Date         Author          Version            Description
-*---------------------------------------------------------*
-* 2020年7月7日     ducl          v1.0.0               修改原因
 */
 public interface UserRegistService
 {

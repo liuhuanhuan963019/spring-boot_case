@@ -26,7 +26,7 @@ public class MailUtil
         // 1.创建连接对象javax.mail.Session
         // 2.创建邮件对象 javax.mail.Message
         // 3.发送一封激活邮件
-        String from = "982976029@qq.com";// 发件人电子邮箱
+        String from = "2432783449@qq.com";// 发件人电子邮箱
         String host = "smtp.qq.com"; // 指定发送邮件的主机smtp.qq.com(QQ)|smtp.163.com(网易)
 
         Properties properties = System.getProperties();// 获取系统属性
@@ -45,7 +45,7 @@ public class MailUtil
             // 1.获取默认session对象
             Session session = Session.getDefaultInstance(properties, new Authenticator() {
                 public PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("982976029@qq.com", "tirfaxwgffnubdcf"); // 发件人邮箱账号、授权码
+                    return new PasswordAuthentication("2432783449@qq.com", "rcqlkoqqjgjgdjej"); // 发件人邮箱账号、授权码
                 }
             });
 
@@ -59,7 +59,7 @@ public class MailUtil
             message.setSubject("账号激活");
             // 2.4设置邮件内容
             String content = "<html><head></head><body><h1>这是一封激活邮件,激活请点击以下链接</h1><h3><a href='http://139.159.147.237:8080/yxyz/active?code="
-                    + code + "'>http://139.159.147.237:8080/yxyz/active?code=" + code
+                    + code + "'>http://127.0.0.1:8080/active?code=" + code
                     + "</href></h3></body></html>";
             message.setContent(content, "text/html;charset=UTF-8");
             // 3.发送邮件

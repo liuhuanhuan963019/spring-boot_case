@@ -21,13 +21,6 @@ import io.swagger.annotations.ApiOperation;
 * @Description: 该类的功能描述
 *
 * @version: v1.0.0
-* @author: ducl
-* @date: 2020年7月7日 下午9:53:02
-*
-* Modification History:
-* Date         Author          Version            Description
-*---------------------------------------------------------*
-* 2020年7月7日     ducl          v1.0.0               修改原因
 */
 @RestController
 @CrossOrigin

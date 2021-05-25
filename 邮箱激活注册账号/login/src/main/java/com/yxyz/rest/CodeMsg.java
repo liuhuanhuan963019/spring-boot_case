@@ -2,8 +2,6 @@ package com.yxyz.rest;
 
 /**
  * @description 错误信息
- * @author dcl
- * @date 2019/12/17
  *
  */
 public class CodeMsg {
