@@ -47,7 +47,7 @@ public class CommonController {
 			String filename = file.getOriginalFilename();
 			String path = copyFileUsingFileStreams(file.getInputStream(), fileSavePath + dateStr, fileSavePath + dateStr +File.separator+filename);
 //			String s1 = DocExclPDFUtils.wordToPdf2(path, realPath + "pdf" + File.separator + dateStr, realPath + "pdf" + File.separator + dateStr + File.separator + filename.substring(0, filename.lastIndexOf(".")) + ".pdf");
-			Word2PdfJacobUtil.word2PDF(path, realPath + "pdf" + File.separator + dateStr);
+			Word2PdfJacobUtil.word2PDF(path, "E:\\test.pdf");
 			map.put("status", "0000");
 			map.put("msg", "成功");
 			map.put("fileData1", "pdf" + File.separator + dateStr + File.separator + filename.substring(0, filename.lastIndexOf(".")) + ".pdf");
