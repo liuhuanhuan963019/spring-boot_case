@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common::head('测试')">
+<meta charset="UTF-8">
+</head>
+<body>
+
+<div class="table-responsive">
+
+    <table class="table table-striped" style="text-align: center;table-layout:fixed;" id="tableOne">
+        <thead>
+        <tr class="table_tr">
+            <th style="width:45px;text-align: center;">序号</th>
+            <th style="width:50px;text-align: center;">课程名称</th>
+            <th style="width:120px;text-align: center;">课程简介</th>
+            <th style="width:80px;text-align: center;">发布时间</th>
+            <th style="width:80px;text-align: center;">修改时间</th>
+            <th style="width:80px;text-align: center;">备注</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="tm,tmStat:${listAll}">
+            <td th:text="${tmStat.count}"></td>
+            <td class="yin" th:text="${tm.name}"></td>
+            <td class="yin" th:text="${tm.des}"></td>
+            <td class="yin dates" th:text="${tm.createTime}"></td>
+            <td class="yin dates" th:text="${tm.modifyTime}"></td>
+            <td class="yin dates" th:text="${tm.remark}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <!--分页-->
+    <div th:replace="common::btn_pager"></div>
+</div>
+
+
+
+<div th:replace="common::scripts"></div>
+
+<script language="javascript">
+    function changeColor(){
+        var color="#f00|容#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+        color=color.split("|");
+        document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+        document.getElementById("blink2").style.color=color[parseInt(Math.random() * color.length)];
+    }
+    setInterval("changeColor()",200);
+</script>
+
+</body>
+</html>
