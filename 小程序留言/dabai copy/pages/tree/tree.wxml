@@ -1,0 +1,19 @@
+<!-- index.wxml -->
+<view class="msg-box">
+   <view class="send-box">
+      <input bindinput="changeInputValue" class="input" type="text" value="{{inputVal}}" placeholder="请输入留言……" placeholder-class="place-input" />
+      <button size="mini" type="primary" bindtap="addMsg">留言</button>
+   </view>
+   <text class="msg-info" wx:if="{{msgData.length==0}}">在树洞中尽情抒发你的情感叭……^_^</text>
+   <view class="list-view">
+      <view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+         <text class="text1">{{item.content}}</text>
+         <view class="reply-wrap" wx:if="{{item.replyContent}}">
+            <text class="reply">管理员回复：{{item.replyContent}}</text>
+         </view>
+         <!-- <button size="mini" plain class="close-btn" type="default" bindtap="replyMsg">回复</button> -->
+         <!-- button size="mini" plain class="close-btn" type="default">删除</button -->
+         <!-- <icon type="cancel" bindtap="DelMsg" data-index="{{index}}" class="close-btn" /> -->
+      </view>
+   </view>
+</view>

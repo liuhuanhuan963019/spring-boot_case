@@ -1,0 +1,56 @@
+/* pages/tree/tree.wxss */
+/**index.wxss**/
+.msg-box {
+  padding: 20px;
+}
+
+.send-box {
+  display: flex;
+}
+
+.input {
+  border: 1px solid #B0C4DE;
+  padding: 5px;
+}
+
+.msg-info {
+  display: block;
+  margin: 10px 0 0 0;
+  color: #339900;
+
+}
+
+.place-input {
+  color: black;
+}
+
+.list-view {
+  margin: 20px 0 0 0;
+}
+
+.item {
+  overflow: hidden;
+  padding: 20rpx 0;
+  border-bottom: 1px dashed #87CEFF;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-wrap {
+  background: #ededed;
+  padding: 0 20rpx;
+}
+
+.text1 {
+  float: left;
+}
+
+.reply {
+  font-size: 24rpx;
+}
+
+.close-btn {
+  float: right;
+  margin: 5px 5px 0 0;
+}
